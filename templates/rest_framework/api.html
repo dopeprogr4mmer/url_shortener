@@ -1,0 +1,22 @@
+{% extends 'rest_framework/base.html' %}
+
+{% block title %}weenyURL{% endblock %}
+
+ 
+{% block branding %}
+	<span>
+		<a href="{% url 'shortener:create-link' %}" rel="nofollow" class="navbar-brand">
+			weenyURL <span class="version">1</span>
+		</a>
+	</span>
+{% endblock %}
+{% block userlinks %}
+	<li class="nav-item"><a href="{% url 'shortener:all-links' %}" class="nav-link ">ALL LINKS</a>
+    </li>
+    <li class="nav-item"><a href="{% url 'schema-swagger-ui' %}" class="nav-link ">API STRUCTURE</a>
+    </li>
+    <li class="nav-item"><a href="{% url 'schema-redoc' %}" class="nav-link ">DOCUMENTATION</a>
+    </li>
+
+<!--<a href='www.google.com'>boom</a> -->
+{% endblock %}
