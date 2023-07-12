@@ -29,7 +29,7 @@ SECRET_KEY=os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'weenyurl.herokuapp.com']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -139,4 +139,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-HOST_URL = 'https://weenyurl.herokuapp.com'
+HOST_URL = 'https://f9fe-122-167-199-9.ngrok-free.app'
